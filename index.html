@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script
+  			src="https://code.jquery.com/jquery-1.9.1.min.js"
+  			integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+  			crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="Handlebars.js"></script>
+	</head>
+	<body>
+		The List of Shoes:
+		<ul class="shoesNav"></ul>
+		
+		<script id="shoe-template" type="x-handlebars-template">​
+		   {{#each this}}​
+		    <li class="shoes">
+		    	<a href="/{{name}}">{{name}} -- Price: {{price}} </a>
+			</li>​
+		    {{/each}}
+		​</script> 
+	</body>
+
+
+	<script type="text/javascript" src="main.js"></script>
+</html>
